@@ -1,0 +1,56 @@
+// Colori
+$color_top_bottom: rgb(238, 124, 93);
+$color_column: rgb(59, 211, 232);
+$color_center: orange;
+
+
+// Misure e posizioni
+$height1: 10vh;
+$height: 80vh;
+$float : left;
+$width : 100%;
+$width2: 70%;
+$text_position: center;
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+main{
+  float: $float;
+  width: $width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: $text_position;
+  line-height: $height;
+}
+
+#column{
+  background-color: $color_column;
+  color: $color_top_bottom;
+  float: $float;
+  width: calc(100% - #{$width2});
+  height: $height;
+}
+
+#center{
+  background-color: $color_center;
+  float: $float;
+  height: $height;
+  width: $width2;
+}
+
+header,
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color_top_bottom;
+  width: $width;
+  height: $height1;
+}
